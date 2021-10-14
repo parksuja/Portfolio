@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "semantic-ui-react";
 import styled from "styled-components";
 import { FlexBox } from "../reusuable/styles";
 
@@ -31,11 +32,22 @@ const IntroContainer = styled.div`
     text-align: right;
   }
 `;
-const IconsBox = styld.div`
- position : absolute;
- bottom : 0;
-height : 70px;
-background-color: blue`;
+const IconsBox = styled.div`
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #555;
+  padding: 20px 0;
+  .myicon {
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .github:hover{
+    color:#302f2f !important;
+  }
+  }
+`;
 
 function Intro() {
   return (
@@ -88,6 +100,60 @@ function Intro() {
             </FlexBox>
           </div>
         </FlexBox>
+        <IconsBox>
+          <FlexBox>
+            <div className="flex-1" />
+            <div className="flex-1">
+              <Icon
+                className="myicon github"
+                name="github"
+                size="big"
+                style={{ color: "white" }}
+              />
+            </div>
+            <div className="flex-1">
+              <Icon
+                className="myicon github"
+                name="github"
+                size="big"
+                style={{ color: "white" }}
+              />
+            </div>
+            <div className="flex-1">
+              <Icon
+                className="myicon github"
+                name="github"
+                size="big"
+                style={{ color: "white" }}
+              />
+            </div>
+            <div className="flex-1">
+              <Icon
+                className="myicon github"
+                name="github"
+                size="big"
+                style={{ color: "white" }}
+              />
+            </div>
+            <div className="flex-1">
+              <Icon
+                className="myicon github"
+                name="github"
+                size="big"
+                style={{ color: "white" }}
+              />
+            </div>
+            <div className="flex-1">
+              <Icon
+                className="myicon github"
+                name="github"
+                size="big"
+                style={{ color: "white" }}
+              />
+            </div>
+            <div className="flex-1" />
+          </FlexBox>
+        </IconsBox>
       </IntroContainer>
     </div>
   );
